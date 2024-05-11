@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.appendFile("hey.txt", " I'm Good", function (err) {
+fs.rename("hey.txt", "hello.txt", function (err) {
     if (err) console.error(err);
-    else console.log(`Done`);
+    else console.log("Done");
 })
