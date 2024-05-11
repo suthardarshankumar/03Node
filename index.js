@@ -1,6 +1,6 @@
 const fs = require('fs');
 
 fs.writeFile("hey.txt", "Hey Bro", function (err) {
-    if (err) console.log(`Have a error`);
+    if (err) console.error(err);
     else console.log(`Done`);
 })
