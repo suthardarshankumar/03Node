@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.rename("hey.txt", "hello.txt", function (err) {
-    if (err) console.error(err);
-    else console.log("Done");
+fs.copyFile("hello.txt", "./copy/copy.txt", function (err) {
+    if (err) console.log(err);
+    else console.log('Done')
 })
