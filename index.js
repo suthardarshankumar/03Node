@@ -1,9 +1,10 @@
-const http = require('http');
+// install first express (npm i express)
 
-const server = http.createServer(function (req, res) {
-    res.end("Hello Bro")
+const express = require('express');
+const app = express();
+
+app.get('/', function (req, res) {
+    res.send('Hello World')
 })
 
-server.listen(3000);
-
-//localhost:3000
+app.listen(3030)
