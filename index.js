@@ -1,6 +1,9 @@
-const fs = require('fs');
+const http = require('http');
 
-fs.unlink("hello.txt", function (err) {
-    if (err) console.log(err.message);
-    else console.log('Remove');
+const server = http.createServer(function (req, res) {
+    res.end("Hello Bro")
 })
+
+server.listen(3000);
+
+//localhost:3000
